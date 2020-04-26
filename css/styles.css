@@ -1,0 +1,56 @@
+/**BODY**/
+/**END BODY**/
+
+/**HEADER**/
+.grid-1{
+	float: left;
+	width: 25%
+	background-color: #ffffff;
+}
+.grid-2 {
+	float: left;
+	width: 50%;
+}
+.grid-3{
+	width: 25%;
+	float: left;
+}
+
+.logo-img {
+	background: url('../images/blank.png');
+	width: 150px;
+	height: 150px;
+	border 0;
+	float: left;
+}
+
+.navbar-content {
+	background-color: #00ccff;
+}
+/**END HEADER**/
+
+
+/********** Extra Large devices only **********/
+@media (min-width: 1200px) {
+	/**HEADER**/
+	/**END HEADER**/
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+
+/********** Small devices only **********/
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+/********** Extra Small devices only **********/
+@media (max-width: 575px) {  
+
+}
