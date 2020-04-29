@@ -14,6 +14,7 @@ body{
 	font-family: 'Muli', sans-serif;
 	background: url(../images/kuka-wallpaper.jpg);
 	background-repeat: no-repeat;
+	object-fit: cover;
 }
 /**END BODY**/
 
@@ -39,7 +40,7 @@ h1 img {
 .nav-toggle-label {
 	position: absolute;
 	top: 0;
-	left: 0;
+	right: 30px;
 	margin-left: 1em;
 	height: 100%;
 	display: flex;
@@ -52,8 +53,8 @@ h1 img {
 .nav-toggle-label span::after {
 	display: block;
 	background: white;
-	height: 2px;
-	width: 2em;
+	height: 10px;
+	width: 5em;
 	border-radius: 2px;
 	position: relative;
 }
@@ -65,11 +66,11 @@ h1 img {
 }
 
 .nav-toggle-label span::before{
-	bottom: 7px;
+	bottom: 20px;
 }
 
 .nav-toggle-label span::after{
-	top: 7px;
+	top: 20px;
 }
 
 nav {
@@ -102,7 +103,7 @@ nav a {
 	font-size: 1.2rem;
 	text-transform: uppercase;
 	opacity: 0;
-	transition: opacity 250ms ease-in-out 250ms;
+	transition: opacity 150ms ease-in-out;
 
 }
 
@@ -117,7 +118,9 @@ nav a:hover {
 
 .nav-toggle:checked ~ nav a {
 	opacity: 1;
+	transition: opacity 150ms ease-in-out;
 }
+
 
 /**END HEADER**/
 
@@ -125,24 +128,166 @@ nav a:hover {
 /********** Extra Large devices only **********/
 @media (min-width: 1200px) {
 	/**HEADER**/
+	.nav-toggle-label {
+		display: none;
+	}
+
+	header {
+		display: grid;
+		grid-template-columns: 1fr auto minmax(600px, 1fr);
+	}
+
+	.logo {
+		grid-column: 2 / 1;
+	}
+
+	nav {
+		all: unset;
+		grid-column: 3 / 4 ;
+		display: flex;
+		justify-content: flex-end;
+		margin: auto;
+	}
+
+	nav a {
+		opacity: 1;
+		position: relative;
+	}
+
+	nav ul {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	nav a::after {
+		content: '';
+		display: block;
+		height: 5px;
+		background: #000000;
+		position: absolute;
+		top: 1.2em;
+		left: 0;
+		right: 0;
+		border-radius: 1px;
+		transform: scale(0, 1);
+		transform-origin: left;
+		transition: transform ease-in-out 250ms;
+	}
+
+	nav a:hover::after {
+		transform: scale(1, 1);
+	}
 	/**END HEADER**/
 }
 
 
 /********** Large devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
+	/**HEADER**/
+	.nav-toggle-label {
+		display: none;
+	}
+
+	header {
+		display: grid;
+		grid-template-columns: 1fr auto minmax(600px, 1fr);
+	}
+
+	.logo {
+		grid-column: 2 / 1;
+	}
+
+	nav {
+		all: unset;
+		grid-column: 3 / 4 ;
+		display: flex;
+		justify-content: flex-end;
+		margin: auto;
+	}
+
+	nav a {
+		opacity: 1;
+		position: relative;
+	}
+
+	nav ul {
+		display: flex;
+		justify-content: flex-end;
+
+	}
+
+	nav a::after {
+		content: '';
+		display: block;
+		height: 5px;
+		background: #000000;
+		position: absolute;
+		top: 1.2em;
+		left: 0;
+		right: 0;
+		border-radius: 1px;
+		transform: scale(0, 1);
+		transform-origin: left;
+		transition: transform ease-in-out 250ms;
+	}
+
+	nav a:hover::after {
+		transform: scale(1, 1);
+	}
+	/**END HEADER**/
 }
 
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+	/**HEADER**/
+	h1 img {
+	width: 300px;
+	height: 300px;
+	}
+
+	nav ul {
+		text-align: center;
+	}
+
+	nav a {
+		font-size: 3em;
+	}
+	/**END HEADER**/
 }
 
 
 /********** Small devices only **********/
 @media (min-width: 576px) and (max-width: 767px) {
+	/**HEADER**/
+	h1 img {
+	width: 300px;
+	height: 300px;
+	}
+
+	nav ul {
+		text-align: center;
+	}
+
+	nav a {
+		font-size: 3em;
+	}
+	/**END HEADER**/
 }
 
 /********** Extra Small devices only **********/
-@media (max-width: 575px) {  
+@media (max-width: 575px) {
+	/**HEADER**/
+	h1 img {
+	width: 300px;
+	height: 300px;
+	}
 
+	nav ul {
+		text-align: center;
+	}
+
+	nav a {
+		font-size: 3em;
+	}
+	/**END HEADER**/
 }
