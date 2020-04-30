@@ -1,7 +1,7 @@
 /**BODY**/
 
 :root {
-	--background: rgba(0, 204, 255, .85);
+	--background: rgba(0, 204, 255, 1);
 }
 
 *, *::before, *::after {
@@ -12,7 +12,7 @@ body{
 	margin: 0;
 	background: #ffffff;
 	font-family: 'Muli', sans-serif;
-	background: url(../images/kuka-wallpaper.jpg);
+	/*background: url(../images/kuka-wallpaper.jpg);*/
 	background-repeat: no-repeat;
 	object-fit: cover;
 }
@@ -28,10 +28,15 @@ header {
 	width: 100%;
 }
 
-h1 img {
-	width: 150px;
-	height: 150px;
+h1 div{
+	width: 300px;
+	height: 300px;
+	margin: auto;
+	background:url('../images/BotsIA-main-logo.png');	
+	background-size: contain;
 }
+
+
 
 .nav-toggle {
 	display: none;
@@ -42,10 +47,15 @@ h1 img {
 	top: 0;
 	right: 30px;
 	margin-left: 1em;
-	height: 100%;
+	margin-top: 8em;
+	height: 25%;
 	display: flex;
 	align-items: center;
 
+}
+
+.nav-toggle-label:hover {
+	cursor: pointer;
 }
 
 .nav-toggle-label span,
@@ -122,6 +132,32 @@ nav a:hover {
 }
 
 
+.esp{
+	display: none;
+}
+
+.eng{
+	display: none;
+}
+
+.language-sel{
+	position: relative;
+	text-align: center;
+}
+
+.esplabel img{
+	cursor: pointer;
+	width: 60px;
+	height: 60px;
+}
+
+.englabel img{
+	cursor: pointer;
+	width: 60px;
+	height: 60px;
+}
+
+
 /**END HEADER**/
 
 
@@ -135,10 +171,33 @@ nav a:hover {
 	header {
 		display: grid;
 		grid-template-columns: 1fr auto minmax(600px, 1fr);
+		background: #fff;
 	}
 
-	.logo {
+	.logo div{
 		grid-column: 2 / 1;
+		position: relative;
+	}
+
+	h1 div{
+		width: 200px;
+		height: 200px;
+		margin: auto;
+		background:url('../images/BotsIA-main-logo-border.png');	
+		background-size: contain;
+	}
+
+	.blue-bar {
+		content: '';
+		display: block;
+		background: var(--background);
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 100px;
+		top:4.2em;
+		border-top: 3px solid black;
+		border-bottom: 3px solid black;
 	}
 
 	nav {
@@ -177,6 +236,29 @@ nav a:hover {
 	nav a:hover::after {
 		transform: scale(1, 1);
 	}
+
+	.nav-toggle:checked ~ nav div{
+		top: -65px;
+	}
+
+	.language-sel{
+		all: unset;
+		position: absolute;
+		top: 40px;
+	}
+
+	.esplabel img{
+		cursor: pointer;
+		width: 30px;
+		height: 30px;
+	}
+
+	.englabel img{
+		cursor: pointer;
+		width: 30px;
+		height: 30px;
+	}
+
 	/**END HEADER**/
 }
 
@@ -187,14 +269,36 @@ nav a:hover {
 	.nav-toggle-label {
 		display: none;
 	}
-
 	header {
 		display: grid;
 		grid-template-columns: 1fr auto minmax(600px, 1fr);
+		background: #fff;
+	}
+
+	h1 div{
+		width: 200px;
+		height: 200px;
+		margin: auto;
+		background:url('../images/BotsIA-main-logo-border.png');	
+		background-size: contain;
+	}
+
+	.blue-bar {
+		content: '';
+		display: block;
+		background: var(--background);
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 100px;
+		top:4.2em;
+		border-top: 3px solid black;
+		border-bottom: 3px solid black;
 	}
 
 	.logo {
 		grid-column: 2 / 1;
+		position: relative;
 	}
 
 	nav {
@@ -234,23 +338,70 @@ nav a:hover {
 	nav a:hover::after {
 		transform: scale(1, 1);
 	}
+
+	.nav-toggle:checked ~ nav div{
+		top: -65px;
+	}
+
+	.language-sel{
+		all: unset;
+		position: absolute;
+		top: 40px;
+	}
+
+	.esplabel img{
+		cursor: pointer;
+		width: 30px;
+		height: 30px;
+	}
+
+	.englabel img{
+		cursor: pointer;
+		width: 30px;
+		height: 30px;
+	}
+
 	/**END HEADER**/
 }
 
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
 	/**HEADER**/
-	h1 img {
-	width: 300px;
-	height: 300px;
+	#main-logo {
+		width: 300px;
+		height: 300px;
 	}
 
 	nav ul {
+		clear: both;
 		text-align: center;
 	}
 
 	nav a {
-		font-size: 3em;
+		font-size: 2em;
+		transition: background 0.5s ease;
+	}
+
+	nav a:hover {
+		color: #000;
+	}
+
+	nav a::after {
+		content: '';
+		display: block;
+		background: #000;
+		height: 5px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 5px 30px 5px 30px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		transition: background 0.5s ease;
+	}
+
+	nav a:hover::after {
+		background: #fff;
 	}
 	/**END HEADER**/
 }
@@ -259,10 +410,14 @@ nav a:hover {
 /********** Small devices only **********/
 @media (min-width: 576px) and (max-width: 767px) {
 	/**HEADER**/
-	h1 img {
-	width: 300px;
-	height: 300px;
+	h1 div{
+		width: 250px;
+		height: 250px;
+		margin: auto;
+		background:url('../images/BotsIA-main-logo.png');	
+		background-size: contain;
 	}
+
 
 	nav ul {
 		text-align: center;
@@ -270,6 +425,29 @@ nav a:hover {
 
 	nav a {
 		font-size: 3em;
+		transition: background 0.5s ease;
+	}
+
+	nav a:hover {
+		color: #000;
+	}
+
+	nav a::after {
+		content: '';
+		display: block;
+		background: #000;
+		height: 5px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 5px 30px 5px 30px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		transition: background 0.5s ease;
+	}
+
+	nav a:hover::after {
+		background: #fff;
 	}
 	/**END HEADER**/
 }
@@ -277,9 +455,12 @@ nav a:hover {
 /********** Extra Small devices only **********/
 @media (max-width: 575px) {
 	/**HEADER**/
-	h1 img {
-	width: 300px;
-	height: 300px;
+	h1 div{
+		width: 200px;
+		height: 200px;
+		margin: auto;
+		background:url('../images/BotsIA-main-logo.png');	
+		background-size: contain;
 	}
 
 	nav ul {
@@ -288,6 +469,29 @@ nav a:hover {
 
 	nav a {
 		font-size: 3em;
+		transition: background 0.5s ease;
+	}
+
+	nav a:hover {
+		color: #000;
+	}
+
+	nav a::after {
+		content: '';
+		display: block;
+		background: #000;
+		height: 5px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: 5px 30px 5px 30px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		transition: background 0.5s ease;
+	}
+
+	nav a:hover::after {
+		background: #fff;
 	}
 	/**END HEADER**/
 }
