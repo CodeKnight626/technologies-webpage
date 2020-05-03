@@ -15,8 +15,8 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="BotsIA-logo.svg"
-   inkscape:export-filename="C:\Users\cesar\Desktop\technologies-webpage\images\BotsIA-main-logo-darker-blue.png"
+   sodipodi:docname="BotsIA-logo-black.svg"
+   inkscape:export-filename="C:\Users\cesar\Desktop\technologies-webpage\images\BotsIA-main-logo-darker-blue-transparent-black.png"
    inkscape:export-xdpi="95.907372"
    inkscape:export-ydpi="95.907372">
   <defs
@@ -29,7 +29,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.64"
-     inkscape:cx="101.36249"
+     inkscape:cx="4.5929034"
      inkscape:cy="433.42704"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
@@ -92,7 +92,7 @@
                id="flowPara892"
                style="stroke-width:0.26327389">BotsIA</flowPara></flowRoot>          <path
              style="fill:#02577a;fill-opacity:1;stroke:#02577a;stroke-width:21.06189728;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-             d="m 9.8593965,238.17495 50.5865715,0.004 -1.1e-4,3.41837 -0.0014,43.11077 -50.5961045,-0.003 z"
+             d="m 10.083145,238.17495 50.586571,0.004 -1.1e-4,3.41837 -0.0014,43.11077 -50.596104,-0.003 z"
              id="path891"
              inkscape:connector-curvature="0"
              inkscape:export-filename="C:\Users\cesar\Desktop\technologies-webpage\images\BotsIA-main-logo.png"
@@ -102,26 +102,26 @@
         </g>
         <path
            id="path4596"
-           style="fill:none;fill-opacity:1;stroke:#bfd3db;stroke-width:1.3931576;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.25;stroke-dasharray:none;stroke-opacity:1"
+           style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.3931576;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4.25;stroke-dasharray:none;stroke-opacity:1"
            d="m 28.592047,286.03031 -4.784484,0.0328 -2.830682,-9.72677 m -4e-6,-1.1e-4 -9.972991,0.0283 -6.4892811,-9.15071 -0.03443,-12.64897 5.4858513,-7.90561 H 35.171284 l 5.572458,5.74066 8.620345,0.057 m -28.38721,23.87953 7.443797,0.0483 m -4.480486,12.82774 7.802513,-4.56548 10.971697,0.0199 7.135317,4.52595 z m 7.802513,-4.56548 c 0,0 5.989163,-8.90395 3.913433,-17.75823 -0.05801,-0.62221 0.121824,0.56026 0,0 -0.833121,-3.83138 -3.08231,-6.19907 -3.446063,-8.87763 m 7.85399,-0.24435 a 3.9290547,4.0713823 0 0 1 -3.929052,4.07139 3.9290547,4.0713823 0 0 1 -3.929055,-4.07139 3.9290547,4.0713823 0 0 1 3.929055,-4.0714 3.9290547,4.0713823 0 0 1 3.929052,4.0714 z m -3.732473,-4.09404 c 0,0 4.180111,1.21005 10.107926,0.89279 l 6.60235,-0.35387 m -14.558996,6.86318 c 1.08086,0.35286 10.004239,-4.85962 14.571713,-4.25108 m -10.340183,27.84351 c 0,0 1.972166,-3.50315 1.165641,-8.72375 -0.939502,-6.08133 -4.6513,-13.91611 -5.397171,-14.86868 m -11.985157,15.30025 v 6.33436 m 26.544149,-28.49707 0.01275,2.61158 m 0.09455,-2.02682 1.320416,-0.005 m -1.359833,1.66357 1.348221,-0.005 m 0.389777,-2.13787 0.01267,2.61158 c 0,0 1.785632,-0.0521 1.759428,-1.46363 -0.02622,-1.41149 -1.792351,-1.29547 -1.792351,-1.29547 m 0.341803,-0.44495 1.134345,-1.12665 5.891684,-0.19791 6.304551,2.66043 -6.238705,-0.94969 -1.777614,-0.004 -2.589354,0.15536 -1.274154,1.06687 m 0.09356,0.73975 2.428702,1.28067 1.899732,-0.25371 3.673269,-0.51712 -2.328514,2.08749 -3.433551,0.43576 -4.092827,-2.17327 m -44.597858,10.3703 2.891195,4.34809 11.138503,0.0395 m -17.6807508,-8.39967 6.3754468,-0.0394 3.296287,5.11208 m -9.5790671,-10.74487 6.3013151,-0.0198 3.854921,-5.07934 m 4.32516,10.6723 2.717489,4.3481 8.538411,-0.009 m -8.167748,-15.24876 2.494318,4.50619 5.330904,-0.0137 m -22.1329126,-3.781 2.8911906,-3.55751 h 17.717813 l 2.415688,3.19099" />
         <flowRoot
            inkscape:export-ydpi="95.907372"
            inkscape:export-xdpi="95.907372"
            inkscape:export-filename="C:\Users\cesar\Desktop\technologies-webpage\images\BotsIA-main-logo-3.png"
            transform="matrix(0.06650383,0,0,0.06121049,-9.2393286,240.34399)"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;line-height:1.25;font-family:Tahoma;-inkscape-font-specification:Tahoma;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#bfd3db;fill-opacity:1;stroke:#bfd3db;stroke-width:1.09177721;stroke-opacity:1;"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;line-height:1.25;font-family:Tahoma;-inkscape-font-specification:Tahoma;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.09177721;stroke-opacity:1;"
            id="flowRoot894"
            xml:space="preserve"><flowRegion
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;font-family:Tahoma;-inkscape-font-specification:Tahoma;text-align:center;text-anchor:middle;fill:#bfd3db;fill-opacity:1;stroke:#bfd3db;stroke-width:1.09177721;stroke-opacity:1;"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;font-family:Tahoma;-inkscape-font-specification:Tahoma;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.09177721;stroke-opacity:1;"
              id="flowRegion896"><rect
-               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;font-family:Tahoma;-inkscape-font-specification:Tahoma;text-align:center;text-anchor:middle;fill:#bfd3db;fill-opacity:1;stroke:#bfd3db;stroke-width:1.09177721;stroke-opacity:1;"
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;font-family:Tahoma;-inkscape-font-specification:Tahoma;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.09177721;stroke-opacity:1;"
                y="845.71429"
                x="68.571426"
                height="228.57146"
                width="1262.8572"
                id="rect898" /></flowRegion><flowPara
              id="flowPara900"
-             style="fill:#bfd3db;fill-opacity:1;stroke:#bfd3db;stroke-width:1.09177721;stroke-opacity:1;">BotsIA</flowPara></flowRoot>      </g>
+             style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.09177721;stroke-opacity:1;">BotsIA</flowPara></flowRoot>      </g>
     </g>
   </g>
 </svg>
