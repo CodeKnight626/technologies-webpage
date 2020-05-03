@@ -218,7 +218,7 @@ nav a:hover {
 .img-2-1{
 	grid-column: 1;
 	grid-row: 3;
-	background: url(../images/main-page/kuka-1.png) no-repeat;
+	background: url(../images/main-page/kuka-2.png) no-repeat;
 	background-size: contain;
 	background-position: center;
 	width: 100%;
@@ -228,7 +228,7 @@ nav a:hover {
 .img-2-2{
 	grid-column: 3;
 	grid-row: 3;
-	background: url(../images/main-page/abb-1.png) no-repeat;
+	background: url(../images/main-page/abb-2.png) no-repeat;
 	background-size: contain;
 	background-position: center;
 	width: 100%;
