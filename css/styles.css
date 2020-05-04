@@ -226,26 +226,21 @@ nav a:hover {
 
 .img-2-1{
 	-ms-grid-column: 1;
-	grid-column: 1;
+	-ms-grid-column-span: 4;
+	grid-column: 1 / 4;
 	-ms-grid-row: 3;
 	grid-row: 3;
-	background: url(../images/main-page/kuka-2.png) no-repeat;
+	background: url(../images/main-page/kuka-abb-1.png) no-repeat;
 	background-size: contain;
 	background-position: center;
 	width: 100%;
-	height: 350px;
+	height: 300px;
 }
-
-.img-2-2{
-	-ms-grid-column: 3;
-	grid-column: 3;
-	-ms-grid-row: 3;
-	grid-row: 3;
-	background: url(../images/main-page/abb-2.png) no-repeat;
-	background-size: contain;
-	background-position: center;
-	width: 100%;
-	height: 350px;
+.servicio .hr-servicio {
+	-ms-grid-column: 1;
+	-ms-grid-column-span:4;
+	-ms-grid-row: 4;
+	grid-column: 1 / 4;
 }
 
 .experiencia{
@@ -307,7 +302,7 @@ nav a:hover {
 
 	nav {
 		all: unset;
-		top: 0%;
+		top: 50%;
 		right: 10%;
 		transform: scale(1, 1);
 		-ms-grid-column: 2;
@@ -452,10 +447,6 @@ nav a:hover {
 		-ms-grid-column-span:3;
 		-ms-grid-row: 4;
 		grid-column: 1 / 3;
-	}
-
-	.img-2-2{
-		display: none;
 	}
 
 	.experiencia{
@@ -673,10 +664,6 @@ nav a:hover {
 		-ms-grid-column-span:3;
 		-ms-grid-row: 4;
 		grid-column: 1 / 3;
-	}
-
-	.img-2-2{
-		display: none;
 	}
 
 	.experiencia{
