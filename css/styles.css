@@ -166,13 +166,20 @@ nav a:hover {
 /**MAIN PAGE**/
 
 .main-page{
-	position: absolute;
 	background: #fff;
 	margin-top: 0px;
 }
 
 .initial-separator{
-	display: none;
+		content: '';
+		display: table;
+		background: url(../images/main-page/circuit-5.png) no-repeat;
+		background-size: contain;
+		width: 80%;
+		height: 200px;
+		margin-top: 10px;
+		margin-bottom: -300px;
+	
 }
 
 .grid-parent{
@@ -369,6 +376,7 @@ form .first-name{
 	margin-bottom: 7px;
 	margin-right: 3.5px;
 	grid-column: 1;
+	grid-row: 1;
 	-ms-grid-column: 1;
 	-ms-grid-column-span: 1;
 	-ms-grid-row: 1;
@@ -379,6 +387,7 @@ form .last-name {
 	margin-bottom: 7px;
 	margin-left: 3.5px;
 	grid-column: 2;
+	grid-row: 1;
 	-ms-grid-column: 2;
 	-ms-grid-column-span: 2;
 	-ms-grid-row: 1;
@@ -394,25 +403,91 @@ form .e-mail{
 	-ms-grid-row: 2;
 }
 
-form .telephone{
-	display: none;
-	grid-column: 2;
-	grid-row: 2;
-	-ms-grid-column: 2;
-	-ms-grid-column-span: 2;
-	-ms-grid-row: 2
-}
-
 form .comments {
 	grid-column: 1 / 3;
 	grid-row: 3;
 	-ms-grid-column: 1;
 	-ms-grid-column-span: 2;
-	-ms-grid-row: 4;
+	-ms-grid-row: 3;
 	height: 6em;
 	resize: none;
 }
+
+form .submit-button {
+	margin: auto;
+	margin-top: 7px;
+	grid-column: 1 / 3;
+	grid-row: 4;
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 3;
+	-ms-grid-row: 4;
+	font-family: 'Muli';
+	height: 3em;
+	background: #02577a;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+
+form .phone, form .email-send {
+	color: #02577a;
+	font-size: 2em;
+}
+
+form .phone {
+	grid-column: 1 / 3;
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 3;
+	grid-row: 5;
+	-ms-grid-row: 5;
+	margin: auto;
+	margin-top: 7px;
+}
+
+form .email-send {
+	grid-column: 1 / 3;
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 3;
+	grid-row: 6;
+	-ms-grid-row: 6;
+	margin: auto;
+	margin-top: 7px;
+}
+
+form label {
+	font-family: 'Muli';
+	color: #02577a;
+	margin-left: 0.5em;
+	font-size: 0.6em;
+}
+
 /**END MAIN PAGE**/
+
+/**FOOTER**/
+.footer{
+	content: '';
+	display: table;
+	width: 100%;
+	background: #02577a;
+	opacity: 1;
+	color: #fff;
+	text-align: center;
+	height: 2em;
+}
+
+.footer div {
+	margin-top: 5px;
+	margin-bottom: 5px
+}
+
+.footer label{
+	font-family: 'Muli';
+	margin-left: 5px;	
+}
+.footer i {
+	margin-left: 10px;
+}
+/**END FOOTER**/
 
 
 /********** Extra Large devices only **********/
@@ -519,7 +594,6 @@ form .comments {
 
 	/**MAIN PAGE**/
 	.main-page{
-		margin-top: 150px;
 	}
 
 	.main-page h2{
@@ -543,7 +617,7 @@ form .comments {
 	.initial-separator{	
 		content: '';
 		display: table;
-		background: url(../images/main-page/circuit-4.png) no-repeat;
+		background: url(../images/main-page/circuit-5.png) no-repeat;
 		background-size: contain;
 		grid-column: 1;
 		grid-row: 1;
@@ -672,25 +746,62 @@ form .comments {
 	}
 	form .first-name{
 		grid-column: 2 / 3;
+		grid-row: 1;
 		-ms-grid-column: 2;
 		-ms-grid-column-span: 1;
 	}
 	form .last-name{
 		grid-column: 3 / 4;
+		grid-row: 1;
 		-ms-grid-column: 3;
 		-ms-grid-column-span: 1;
 	}
 	form .e-mail {
+		grid-row: 2;
 		grid-column: 2 / 4;
 		-ms-grid-column: 2;
 		-ms-grid-column-span: 2;
+		-ms-grid-row: 2;
 	}
 	form .comments{
+		grid-row: 3;
 		grid-column: 2 / 4;
 		-ms-grid-column: 2;
 		-ms-grid-column-span: 2;
+		-ms-grid-row: 3;
+	}
+	form .submit-button {
+		grid-column: 2 / 4;
+		grid-row: 4;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 2;
+		-ms-grid-row: 4;
+		width: 50%;
+		
+	}
+
+	form .phone{
+		grid-column: 4;
+		grid-row: 1;
+		-ms-grid-row: 5;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		margin: auto;
+	}
+	form .email-send {
+		grid-column: 4;
+		grid-row: 2;
+		-ms-grid-row: 6;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		margin: auto;
+	}
+	form label {
+		font-size: 0.5em;
 	}
 	/**END MAIN PAGE**/
+	/**FOOTER**/
+	/**END FOOTER**/
 
 }
 
@@ -800,7 +911,6 @@ form .comments {
 	/**END HEADER**/
 	/**MAIN PAGE**/
 	.main-page{
-		margin-top: 150px;
 	}
 	.main-page h2 {
 		margin-top: 150px;
@@ -816,14 +926,14 @@ form .comments {
 	.initial-separator{	
 		content: '';
 		display: table;
-		background: url(../images/main-page/circuit-4.png) no-repeat;
+		background: url(../images/main-page/circuit-5.png) no-repeat;
 		background-size: contain;
 		grid-column: 1;
 		grid-row: 1;
 		-ms-grid-row: 1;
 		-ms-grid-column: 1;
 		width: 80%;
-		height: 200px;
+		height: 100px;
 		margin-top: 10px;
 		margin-bottom: -300px;
 	}
@@ -969,6 +1079,34 @@ form .comments {
 		grid-column: 2 / 4;
 		-ms-grid-column: 2;
 		-ms-grid-column-span: 2;
+	}
+	form .submit-button {
+		grid-column: 2 / 4;
+		grid-row: 4;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 2;
+		-ms-grid-row: 4;
+		width: 50%;
+	}
+
+	form .phone{
+		grid-column: 4;
+		grid-row: 1;
+		-ms-grid-row: 5;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		margin: auto;
+	}
+	form .email-send {
+		grid-column: 4;
+		grid-row: 2;
+		-ms-grid-row: 6;
+		-ms-grid-column: 2;
+		-ms-grid-column-span: 1;
+		margin: auto;
+	}
+	form label {
+		font-size: 0.4em;
 	}
 /**END MAIN PAGE**/
 }
