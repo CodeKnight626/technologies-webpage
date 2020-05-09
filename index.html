@@ -8,6 +8,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Muli:wght@200&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
 
+	<!--Javascript-->
+	<script src="js/script.js"></script>
 	<!-- Icon from Fontawesome -->
     <script src="https://kit.fontawesome.com/bfba429785.js" crossorigin="anonymous"></script>
 
@@ -58,13 +60,13 @@
 
 				<div id="experience-id" class="experience grid-xs-1"><h2>Experiencia</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><div class="img-3-1"></div><div class="img-3-2"></div><hr></div>
 				<div id="contact-id" class="contact grid-xs-1"><h2>Contacto</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<div class="contact-form">
+					<div action="data/action_page_botsia.php" class="contact-form" id="dataUserForm">
 						<form>
-							<input type="text" name="first-name" class="first-name" placeholder="Nombre*">
-							<input type="text" name="last-name" class="last-name" placeholder="Apellido*" ><br>
-							<input type="text" name="e-mail" class="e-mail" placeholder="E-mail*">
-							<textarea name="comments" class="comments" placeholder="Comentarios"></textarea>
-							<button type="button" class="submit-button">Enviar</button>
+							<input type="text" name="first-name" id="first-name-id" class="first-name" placeholder="Nombre*" required>
+							<input type="text" name="last-name" id="last-name-id" class="last-name" placeholder="Apellido*" required><br>
+							<input type="text" name="e-mail" id="email-id" class="e-mail" placeholder="E-mail*" required>
+							<textarea name="comments" id="comments-id" class="comments" placeholder="Comentarios"></textarea>
+							<button type="submit" class="submit-button" form="dataUserForm">Enviar</button>
 							<div class="phone"><span class="fas fa-phone-alt"><label>+52 1 (614) 4 06 17 15</label></span></div>
 							<div class="email-send"><span class="fas fa-envelope"><label>cesarafv17@gmail.com</label></span></div>
 						</form>
