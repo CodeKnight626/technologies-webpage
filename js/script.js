@@ -24,9 +24,9 @@ $(document).ready(function() {
 		document.querySelector(".contact h2").innerHTML = "Contacto";
 
 		document.querySelector(".about-us p").innerHTML = 
-			"Somos una empresa joven con experiencia en el sector automotriz enfocados en la programación industrial, siendo nuestra meta consolidarnos como una empresa lider en tecnología; llevamos acabo investigaciones en nuevos campos y los dirigimos a proyectos reales con la intenci[on de ofrecer las mejores soluciones a nuestros clientes.";
+			"Somos una empresa joven con experiencia en el sector automotriz enfocados en la programación industrial, siendo nuestra meta consolidarnos como una empresa líder en tecnología; llevamos acabo investigaciones en nuevos campos y los dirigimos a proyectos reales con la intenci[on de ofrecer las mejores soluciones a nuestros clientes.";
 		document.querySelector(".service p").innerHTML = 
-			"Entre nuestros principales servicios se encuentra el comisionamiento y puesta en marcha de robots y PLC´s, programación offline, Automatización de lineas de producción, diseño y simulación, soporte a producción, optimización de proceso y tiempo de ciclo, y entrenamiento. Aplicaciones industriales de soldadura, pegamento, manipulación, y vision artificial.";
+			"Entre nuestros principales servicios se encuentra el comisionamiento y puesta en marcha de robots y PLC´s, programación offline, Automatización de líneas de producción, diseño y simulación, soporte a producción, optimización de proceso y tiempo de ciclo, y entrenamiento. Aplicaciones industriales de soldadura, pegamento, manipulación, y visión artificial.";
 		document.querySelector(".experience p").innerHTML = 
 			"Tenemos una experiencia en conjunto en reconocidas marcas automotrices.";
 		
