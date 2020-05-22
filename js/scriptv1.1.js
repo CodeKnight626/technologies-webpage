@@ -2,6 +2,14 @@
 //console.log(document.getElementById("title"));
 //console.log(document instanceof HTMLDocument);
 
+function encode_utf8(s) {
+  return unescape(encodeURIComponent(s));
+}
+
+function decode_utf8(s) {
+  return decodeURIComponent(escape(s));
+}
+
 
 $(document).ready(function() {
 
@@ -24,7 +32,7 @@ $(document).ready(function() {
 		document.querySelector(".contact h2").innerHTML = "Contacto";
 
 		document.querySelector(".about-us p").innerHTML = 
-			"Somos una empresa joven con experiencia en el sector automotriz enfocados en la programación industrial, siendo nuestra meta consolidarnos como una empresa líder en tecnología; llevamos acabo investigaciones en nuevos campos y los dirigimos a proyectos reales con la intenci[on de ofrecer las mejores soluciones a nuestros clientes.";
+			"Somos una empresa joven con experiencia en el sector automotriz enfocados en la programación industrial, siendo nuestra meta consolidarnos como una empresa líder en tecnología; llevamos acabo investigaciones en nuevos campos y los dirigimos a proyectos reales con la intención de ofrecer las mejores soluciones a nuestros clientes.";
 		document.querySelector(".service p").innerHTML = 
 			"Entre nuestros principales servicios se encuentra el comisionamiento y puesta en marcha de robots y PLC´s, programación offline, Automatización de líneas de producción, diseño y simulación, soporte a producción, optimización de proceso y tiempo de ciclo, y entrenamiento. Aplicaciones industriales de soldadura, pegamento, manipulación, y visión artificial.";
 		document.querySelector(".experience p").innerHTML = 
@@ -38,7 +46,7 @@ $(document).ready(function() {
 
 		if (!submited){
 			document.getElementById("send-data").innerHTML = "Enviar";
-			document.querySelector(".contact p").innerHTML = "Comunicate con nosotros y dinos como te podemos ayudar.";
+			document.querySelector(".contact p").innerHTML = "Comunicate con nosotros y cuentanos como te podemos ayudar.";
 		}
 		else {
 			document.getElementById("send-data").innerHTML = "Enviado";	
@@ -66,7 +74,7 @@ $(document).ready(function() {
 		document.querySelector(".service p").innerHTML = 
 			"Our main services are commisioning and start up of industrial robots and PLC's, offline programming, automation of lines, design and simulation, shift support, cycle time and process improvements and training. Industrial applications as welding, glue, handling and artificial vision.";
 		document.querySelector(".experience p").innerHTML = 
-			"We have an overall experience in a some recognized industries.";
+			"We have an overall experience in some recognized industries.";
 
 
 		//Contact form
